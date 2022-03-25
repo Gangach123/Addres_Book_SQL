@@ -16,9 +16,14 @@ Zip CHAR(6) NOT NULL,
 PhoneNo CHAR(10) NOT NULL,
 Email VARCHAR(30) NOT NULL
 )
-
-
 ALTER TABLE AddressBookTable
 ALTER COLUMN Zip INT;
 ALTER TABLE AddressBookTable
 ALTER COLUMN PhoneNo BIGINT;
+
+--UC3 Inserting Values 
+INSERT INTO AddressBookTable(FirstName,LastName,Address,City,State,Zip,PhoneNo,Email)
+VALUES('Ganga','Chilamakooru','Chinnakudala','Kadapa','AP',516396,7702173235,'chilamakooru.ganga@gmail.com'),
+('Jyothi','Netapalli','Lingala','Kadapa','AP',516396,7702173234,'jyothi@gmail.com'),
+('Deepa','Maddela','Proddutur','Kadapa','AP',516330,9949432303,'glorivineetha@gmail.com')
+
